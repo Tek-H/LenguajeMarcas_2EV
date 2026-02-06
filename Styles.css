@@ -13,6 +13,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter Tight", sans-serif;
+    color: var(--color-secundary);
 }
 
 .header{
@@ -21,7 +22,6 @@ body{
     justify-content: space-between;
     align-items: center ;
     background-color: var(--color-principal);
-    color: var(--color-secundary);
 }
 
 .header__box{
@@ -56,6 +56,28 @@ body{
 
 .nav__link{
     font-size: var(--fontSize-secundary);
+}
+
+
+
+.buttons{
+    height: 125px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons__box{
+    display: flex;
+    flex-direction: row;    
+    width: 600px;
+    padding: 10px;
+    background-color: rgb(155, 130, 74);
+    border: 3px solid rgb(103, 87, 49);
+    border-radius: 50px;
+    justify-content: space-around;
 }
 
 
