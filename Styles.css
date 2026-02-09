@@ -202,7 +202,7 @@ body{
     justify-content: flex-end;
 
     height: 400px;
-    width: 250px;
+    width: 300px;
     border-radius: 25px;
     box-shadow: 0px 5px 25px var(--color-terciary);
 
@@ -212,6 +212,7 @@ body{
     height: 150px;
     font-size: 25px;
     background-color: var(--color-principal);
+    padding-top: 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -246,6 +247,96 @@ body{
 }
 
 
+.offers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    margin-top: 50px;
+}
+
+.offers__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+}
+
+.offers__cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.offers__card{
+    color: var(--color-terciary);
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.offers__image{
+    width: 100%;
+    height: auto;
+}
+
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: var(--color-fourth);
+  margin-bottom: 20px;
+}
+
+.products__slider {
+  width: 95%;
+  overflow: hidden;
+}
+
+.products__slider-track {
+  display: flex;
+  gap: 20px;
+  width: 300%;
+  animation: scroll 20s linear infinite;
+}
+
+.products__slide {
+    width: 100%;
+    text-align: center;
+    color: var(--color-terciary);
+}
+
+.products__image {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50.1%); }
+}
+
+.products__slider:hover .products__slider-track {
+  animation-play-state: paused;
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 900px){
     .header__title{
         font-size: 30px;
@@ -256,6 +347,12 @@ body{
     .nav__link{
         font-size: 15px;
     }
+    .offers__cards{
+        gap: 10px;
+    }
+    .products__slider-track{
+        width: 700%;
+    }
     .buttons__box{
         width: 90%;
     }
@@ -265,5 +362,14 @@ body{
     .players__card{
         width: 80%;
         margin-top: 25px;
+    }
+}
+
+@media (max-width: 1649px){
+    .offers{
+    
+    }
+    .offers__cards{
+        gap: 10px;
     }
 }
