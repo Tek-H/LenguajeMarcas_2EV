@@ -2,7 +2,6 @@
 
 :root{
     --color-principal: #ef0307;
-    --color-transparent: #ef03073d;
     --color-secundary: rgb(247, 247, 247);
     --color-terciary: rgba(0, 0, 0, 0.5);
     --color-quaternary: #9B824A;
@@ -166,7 +165,7 @@ body{
 
 .heroHome{
     width: 100%;
-    background-image: linear-gradient(var(--color-transparent)), url(../LenguajeMarcas_2EV/Imagenes/Home/image.png);
+    background-image: linear-gradient(var(--color-terciary)), url(../LenguajeMarcas_2EV/Imagenes/Home/image.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -179,7 +178,7 @@ body{
 
 .heroHome__carousel{
     display: flex;
-    width: 300%; /* 3 slides */
+    width: 300%;
     animation: slideAnimation 9s infinite;
     align-items: center;
     height: var(--width-total);
@@ -197,7 +196,7 @@ body{
 }
 
 .heroHome__slide--shirts{
-    background-image: url(../LenguajeMarcas_2EV/Imagenes/Home/On_The_Road_Desktop_2000x1150px.webp);
+    background-image: linear-gradient(var(--color-terciary)), url(../LenguajeMarcas_2EV/Imagenes/Home/On_The_Road_Desktop_2000x1150px.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -316,7 +315,7 @@ body{
     align-items: center;
     justify-content: space-between;
     width: var(--width-total);
-    gap: 25px;
+    gap: 55px;
 }
 
 .newsHome__box{
@@ -330,6 +329,7 @@ body{
 .newsHome__box:hover{
     transform: translateY(-10px);
     border: 8px solid var(--color-principal);
+    scale: 1.05;
 }
 
 .newsHome__img{
@@ -339,4 +339,6 @@ body{
 .newsHome__text{
     margin: 0 0 25px 25px;
 }
+
+
 /* #endregion */
