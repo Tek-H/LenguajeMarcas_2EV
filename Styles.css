@@ -397,6 +397,159 @@ body{
     margin: 0 0 25px 25px;
 }
 
+/* #endregion */
+
+/* #region CLOTHES */
+
+.clotherHero{
+    background-image: linear-gradient(var(--color-terciary)), url(./Imagenes/Home/On_The_Road_Desktop_2000x1150px.webp);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    gap: 25px;
+}
+
+.salesClothes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: var(--width-total);
+}
+
+.salesClothes__carousel {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.salesClothes__img{
+    border-radius: 25px;
+}
+
+.salesClothes__box {
+  display: flex;
+  width: max-content;
+  animation: scroll 15s linear infinite;
+  gap: 25px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.title--sales{
+    position: absolute;
+    margin-left: 50px;
+}
+
+.title--cross{
+    text-decoration: line-through;
+}
+
+.clothes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: var(--width-total);
+}
+
+.clothes__div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: var(--width-principal);
+    gap: 50px;
+}
+
+.clothes__img{
+    width: var(--width-total);
+    height: 300px;
+    background-image: url(./Imagenes/Clothes/m06975_f1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.clothes__img:hover{
+    background-image: url(./Imagenes/Clothes/m06975_f.webp);
+    scale: 1.05;
+}
+
+.heart{
+    position: absolute;
+    margin-left: 10px;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.heart__input {
+  display: none;
+}
+
+.heart__span {
+  font-size: 40px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.heart__span::before {
+  content: "❤︎";
+}
+
+.heart__input:checked + span::before {
+  content: "❤︎";
+  color: crimson;
+  transition: 0.5s;
+}
+
+.heart:hover{
+    scale: 1.05;
+}
+
+/* #region CLOTHES IMG */
+
+.clothes__img--1{
+    background-image: url(./Imagenes/Clothes/m06986_f1.webp);
+}
+
+.clothes__img--1:hover{
+    background-image: url(./Imagenes/Clothes/m06986_f2.webp);
+}
+
+.clothes__img--2{
+    background-image: url(./Imagenes/Clothes/u06898_f1.webp);
+}
+
+.clothes__img--2:hover{
+    background-image: url(./Imagenes/Clothes/u06898_f.webp);
+}
+
+.clothes__img--3{
+    background-image: url(./Imagenes/Clothes/u06966_f1.webp);
+}
+
+.clothes__img--3:hover{
+    background-image: url(./Imagenes/Clothes/u06966_f2.webp);
+}
+
+/* #endregion */
 
 
 /* #endregion */
