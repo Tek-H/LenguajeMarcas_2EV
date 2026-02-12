@@ -340,3 +340,181 @@ body{
     margin: 0 0 25px 25px;
 }
 /* #endregion */
+
+
+
+/* SERGIO */
+:root {
+  --red-main: #d00000;
+  --red-dark: #a80000;
+  --gold: #a07c40;
+  --white: #ffffff;
+  --gray-bg: #f4f4f4;
+  --font-main: Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+
+body {
+  background: var(--white);
+}
+
+
+
+.header {
+  background: var(--red-main);
+  color: var(--white);
+  padding: 24px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+h1 {
+  font-size: 30px;
+  color: rgb(255, 20, 20);
+  text-shadow: 0 0 5px #ffffff,
+               0 0 10px #fff,
+               0 0 20px #00ccff,
+               0 0 40px #ff00de,
+               0 0 80px #ff0000;
+}
+
+
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100vh;
+  background: var(--red-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+#menu-toggle:checked + .hamburger + .nav {
+  right: 0;
+}
+
+
+.hero {
+  background: url("fotos/vestuario.jpg") center/cover no-repeat;
+  color: var(--white);
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+
+.menu-buttons {
+  text-align: center;
+}
+
+.menu-buttons button {
+  background: var(--gold);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.menu-buttons button:hover {
+  transform: scale(1.1);
+}
+
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.product {
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.1);
+}
+
+.product img {
+  width: 100%;
+  max-width: 240px;
+}
+
+
+
+.footer {
+  background: var(--gray-bg);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.footer img {
+  width: 40px;
+}
+
+
+@media (max-width: 600px) {
+  .header {
+    padding: 16px 24px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}

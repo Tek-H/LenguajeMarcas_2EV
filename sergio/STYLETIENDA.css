@@ -1,0 +1,232 @@
+:root {
+  --red-main: #d00000;
+  --red-dark: #a80000;
+  --gold: #a07c40;
+  --white: #ffffff;
+  --gray-bg: #f4f4f4;
+  --font-main: Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+
+
+.header {
+  
+  background: var(--red-main);
+  color: var(--white);
+  padding: 24px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items:;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  flex-direction: row;
+
+
+}
+
+
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+h1 {
+  font-size: 30px;
+  color: rgb(255, 20, 20);
+  text-shadow: 0 0 5px #ffffff,
+               0 0 10px #fff,
+               0 0 20px #00ccff,
+               0 0 40px #ff00de,
+               0 0 80px #ff0000;
+}
+
+
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+   
+}
+
+
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100vh;
+  background: var(--red-main);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+  padding-left: 30px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+
+.nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: start;
+  position: sticky;
+}
+
+
+
+#menu-toggle:checked + .hamburger + .nav {
+  right: 0;
+}
+
+
+.hero {
+  animation: carrusel-fondo 16s infinite;
+  color: var(--white);
+  text-align: center;
+  padding: 70px 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+
+.menu-buttons {
+  text-align: center;
+  padding: 60px 20px;
+
+
+}
+   
+@keyframes carrusel-fondo {
+  0% {
+    background-image: url("../Imagenes/fotos/fondo1.avif");
+  }
+  25% {
+    background-image: url("../Imagenes/fotos/fondo2.webp");
+  }
+  50% {
+    background-image: url("../Imagenes/fotos/fondo3.webp");
+  }
+  75% {
+    background-image: url("../Imagenes/fotos/fondo4.jpg");
+  }
+  100% {
+    background-image: url("../Imagenes/fotos/fondo1.avif");
+  }
+}
+
+.menu-buttons button {
+  background: var(--gold);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.menu-buttons button:hover {
+  transform: scale(1.1);
+}
+
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 60px 40px;
+
+  min-height: 400px;
+
+  background-image: url("../Imagenes/fotos/logoArsenal_color.png");
+  background-size: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product {
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.1);
+}
+
+.product img {
+  width: 100%;
+  max-width: 240px;
+}
+.section-title{
+  align-items: center;
+  align-content: center;
+}
+
+.section{
+  animation: carrusel-fondo 16s infinite;
+  color: black  ;
+  text-align: center;
+  padding: 70px 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.footer {
+  background: var(--gray-bg);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  color: black;
+}
+
+.footer img {
+  width: 40px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 16px 24px;
+    
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}
