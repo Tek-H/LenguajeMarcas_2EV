@@ -11,17 +11,29 @@
     <header class="header">
             <div class="header__box">
                 <div class="header__titleBox">
-                    <img src="./Imagenes/Escudos/logoArsenal.png" class="header__image" alt="logo_icon">
+                    <img src="./Imagenes/Escudos/logoArsenal.png" class="header__img" alt="logo_icon">
                     <h1 class="header__title">ARSENAL FC</h1>
                 </div>
                 <nav class="nav">
-                    <button class="nav__link">Shop</button>
-                    <button class="nav__link">Players</button>
-                    <button class="nav__link">Trophies</button>
-                    <button class="nav__link">Tickets</button>
+                    <button class="nav__link">Home</button>
+                    <button class="nav__link">Cart</button>
+                    <button class="nav__link">Contact</button>
                 </nav>
+                
+                
+                <div class="nav__item">
+                    <a href="#" class="nav__link">☰
+                    </a>
+                    <div class="dropdown">
+                        <a href="#" class="nav__link">Home</a>
+                        <a href="#" class="nav__link">Contact</a>
+                        <a href="#" class="nav__link">Cart</a>
+                    </div>
+                </div>
+
             </div>
-    </header>
+        </header>
+
 
     <section class="heroHome">
 
@@ -31,7 +43,7 @@
 
                 <p class="heroHome__text">12/05/2026 12:00 PM</p>
 
-                 <div class="heroHome__match">
+                <div class="heroHome__match">
                     
                     <img class="heroHome__img" src="./Imagenes/Escudos/logoArsenal.png" alt="Arsenal">
                     <p class="heroHome__vs">/</p>
@@ -77,7 +89,7 @@
                 <div class="newsHome__text">
 
                     <h2 class="subtitle">New</h2>
-                    <p class="text">Description of the new</p>
+                    <p class="text text--hidden">Description of the new</p>
                     <button class="button">ENTER THE NEW</button>
 
                 </div>
@@ -90,7 +102,7 @@
                 <div class="newsHome__text">
 
                     <h2 class="subtitle">New</h2>
-                    <p class="text">Description of the new</p>
+                    <p class="text text--hidden">Description of the new</p>
                     <button class="button">ENTER THE NEW</button>
 
                 </div>
@@ -103,7 +115,7 @@
                 <div class="newsHome__text">
 
                     <h2 class="subtitle">New</h2>
-                    <p class="text">Description of the new</p>
+                    <p class="text text--hidden">Description of the new</p>
                     <button class="button">ENTER THE NEW</button>
 
                 </div>
@@ -176,43 +188,57 @@
     </section>
 
     <footer class="footer">
-        <div class="footer__box">
-            <div class="footer__column footer__column--big">
-                <h2 class="footer__title">Namedly</h2>
-                <p class="footer__description">Descriptive line about what your company does.</p>
-                <div class="footer__icons">
-                    <img alt="icono" src="./Imagenes/Logos/logoFacebook.png" class="footer__icon">
-                    <img alt="icono" src="./Imagenes/Logos/logoInstagram.png" class="footer__icon">
-                    <img alt="icono" src="./Imagenes/Logos/logoX.png" class="footer__icon">
+
+            <div class="footer__box">
+
+                <div class="footer__info">
+
+                    <img class="footer__img" src="./Imagenes/Escudos/Píxel.png" alt="Arsenal">
+
+                    <div class="footer__left">
+
+                        <h2 class="footer__title">Arsenal</h2>
+                        <p class="footer__description">Official webpage of Arsenal FC.</p>
+
+                        <div class="footer__icons">
+
+                            <img alt="footer_icon" src="./Imagenes/Logos/icons8-facebook-nuevo-50.png" class="footer__icon">
+                            <img alt="footer_icon" src="./Imagenes/Logos/icons8-instagram-50.png" class="footer__icon">
+                            <img alt="footer_icon" src="./Imagenes/Logos//icons8-x-50.png" class="footer__icon">
+
+                        </div>
+
+                    </div>
+
+                    <div class="footer__column">
+                        <h3>Features</h3>
+                        <a href="" class="footer__text">Home</a>
+                        <a href="" class="footer__text">Shop</a>
+                        <a href="" class="footer__text">Players</a>
+                        <a href="" class="footer__text">Trophies</a>
+                        <a href="" class="footer__text">Tickets</a>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3>Support</h3>
+                        <a href="" class="footer__text">Contact</a>
+                        <a href="" class="footer__text">Support</a>
+                        <a href="" class="footer__text">Legal</a>
+                    </div>
+
                 </div>
-            </div>
-            <div class="footer__column">
-                <div>
-                    <h3>Features</h3>
-                    <p class="footer__text">Core features</p>
-                    <p class="footer__text">Pro experience</p>
-                    <p class="footer__text">Integrations</p>
+
+                <div class="footer__form">
+                    <h3 class="footer__title3">SUBSCRIBE TO OUR NEWSLETTER</h3>
+                    <input class="footer__input" type="text" placeholder="Email">
+                    <button class="button">SUBSCRIBE</button>
                 </div>
+
             </div>
-            <div class="footer__column">
-                <div>
-                    <h3>Learn more</h3>
-                    <p class="footer__text">Blog</p>
-                    <p class="footer__text">Case studies</p>
-                    <p class="footer__text">Customer stories</p>
-                    <p class="footer__text">Best practices</p>
-                </div>
-            </div>
-            <div class="footer__column">
-                <div>
-                    <h3>Support</h3>
-                    <p class="footer__text">Contact</p>
-                    <p class="footer__text">Support</p>
-                    <p class="footer__text">Legal</p>
-                </div>
-            </div>
-        </div>
+
+            <p class="footer__description">© 2025 Arsenal. Todos los derechos reservados.</p>
+
     </footer>
-    
+
 </body>
 </html>
