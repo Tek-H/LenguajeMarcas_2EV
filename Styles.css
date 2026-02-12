@@ -39,7 +39,7 @@ body{
     align-items: center;
 }
 
-.header__image{
+.header__img{
     width: 65px;
 }
 
@@ -69,53 +69,40 @@ body{
     font-weight: 600;
     font-family: var(--fontFamily--principal);
     transition: 0.5s;
+    text-decoration: none;
 }
 
 :hover.nav__link{
     color: var(--color-quaternary);
 }
 
-.header__dropdown{
+.nav__item {
+    position: relative;  
+    display: none; 
+}
+
+.dropdown {
+    position: absolute;
+    background-color: var(--color-principal);
+    top: 130%;
+    left: auto;
+    right: 0;
+    border-radius: 10px;
+    min-width: 200px;
+    padding: 8px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: none;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    z-index: 999;
+    padding: 10px;
 }
 
-.header__dropdownMenu{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.header__toggle{
-    display: none;
-}
-
-.header__link{
-    text-decoration: none;
-    color: var(--fontSize-principal);
-}
-
-.header__dropdownIcon{
-    font-size: 30px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.header__toggle:checked + .header__dropdownIcon + .header__dropdownMenu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.nav__item:hover .dropdown {
+    visibility: visible;
+    transform: translateY(0);
 }
 
 
@@ -208,7 +195,7 @@ body{
     flex-direction: column;
     width: 300px;
     gap: 15px;
-    margin-right: 100px;
+    margin-right: 150px;
     align-items: center;
     justify-content: center;
 }
@@ -731,9 +718,12 @@ body{
         display: none;
     }
 
-    .header__dropdown{
+    .nav__item{
         display: block;
     }
+
+    
+
 
     /* #endregion */
 
@@ -757,6 +747,14 @@ body{
 
     .button{
         font-size: 10px;
+    }
+
+    .header__title{
+        font-size: 30px;
+    }
+
+    .header__img{
+        width: 40px;
     }
 
     /* #endregion */
