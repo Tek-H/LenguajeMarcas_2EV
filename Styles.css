@@ -245,13 +245,26 @@ body{
     font-weight: 800;
 }
 
+.progress{
+    position: fixed;
+    width: 100%;
+    height: 6px;
+    background: transparent;
+    z-index: 1000;
+}
+
+.progress__bar{
+    height: 100%;
+    background: var(--color-principal);
+}
+
 /* #endregion */
 
 /* #region HOME */
 
 .heroHome{
     width: 100%;
-    background-image: linear-gradient(var(--color-terciary)), url(../LenguajeMarcas_2EV/Imagenes/Home/image.png);
+    background-image: linear-gradient(var(--color-terciary)), url(./Imagenes/Home/image.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -283,16 +296,18 @@ body{
 }
 
 .heroHome__slide--shirts{
-    background-image: linear-gradient(var(--color-terciary)), url(../LenguajeMarcas_2EV/Imagenes/Home/On_The_Road_Desktop_2000x1150px.webp);
+    background-image: linear-gradient(var(--color-terciary)), url(./Imagenes/Home/On_The_Road_Desktop_2000x1150px.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 100%;
 }
 
 .heroHome__slide--tour{
-    background-image: linear-gradient(var(--color-terciary)), url(../LenguajeMarcas_2EV/Imagenes/Home/FCACNJWWEAQHRKL.jpg);
+    background-image: linear-gradient(var(--color-terciary)), url(./Imagenes/Home/FCACNJWWEAQHRKL.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 100%;
 }
 
@@ -481,6 +496,9 @@ body{
 
 .trophiesHome__img{
     height: 500px;
+    margin: 0 auto;
+    width: 100%;        
+    object-fit: cover;
 }
 
 .trophiesHome__text{
@@ -492,7 +510,7 @@ body{
 /* #region CLOTHES */
 
 .clothesHero{
-    background-image: linear-gradient(var(--color-terciary)), url(./Imagenes/Home/On_The_Road_Desktop_2000x1150px.webp);
+    background-image: linear-gradient(var(--color-terciary)), url(./Imagenes/Home/On_The_Road_Desktop_2000x1150px.png);
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -524,6 +542,7 @@ body{
 
 .salesClothes__img{
     border-radius: 25px;
+    object-fit: cover;
 }
 
 .salesClothes__box {
@@ -672,6 +691,136 @@ body{
     background-image: url(./Imagenes/Clothes/m06989_f2.webp);
 }
 
+.clothes__img--8{
+    background-image: url(./Imagenes/Clothes/n06162_f1.png);
+}
+
+.clothes__img--8:hover{
+    background-image: url(./Imagenes/Clothes/n06162_f.png);
+}
+
+.clothes__img--9{
+    background-image: url(./Imagenes/Clothes/w06645_f1.png);
+}
+
+.clothes__img--9:hover{
+    background-image: url(./Imagenes/Clothes/w06645_f2.png);
+}
+
+.clothes__img--10{
+    background-image: url(./Imagenes/Clothes/w06642_f1.png);
+}
+
+.clothes__img--10:hover{
+    background-image: url(./Imagenes/Clothes/w06642_f2.png);
+}
+
+.clothes__img--11{
+    background-image: url(./Imagenes/Clothes/w06651_f1.png);
+}
+
+.clothes__img--11:hover{
+    background-image: url(./Imagenes/Clothes/w06651_f2.png);
+}
+
+.clothes__img--12{
+    background-image: url(./Imagenes/Clothes/w06673_f1.png);
+}
+
+.clothes__img--12:hover{
+    background-image: url(./Imagenes/Clothes/w06673_f2.png);
+}
+
+.clothes__img--13{
+    background-image: url(./Imagenes/Clothes/w06692_f1.png);
+}
+
+.clothes__img--13:hover{
+    background-image: url(./Imagenes/Clothes/w06692_f2.png);
+}
+
+.clothes__img--14{
+    background-image: url(./Imagenes/Clothes/w06711_f1.png);
+}
+
+.clothes__img--14:hover{
+    background-image: url(./Imagenes/Clothes/w06711_f2.png);
+}
+
+.clothes__img--15{
+    background-image: url(./Imagenes/Clothes/w06713_f1.png);
+}
+
+.clothes__img--15:hover{
+    background-image: url(./Imagenes/Clothes/w06713_f2.png);
+}
+
+.clothes__img--16{
+    background-image: url(./Imagenes/Clothes/jkb1794_f1.png);
+}
+
+.clothes__img--16:hover{
+    background-image: url(./Imagenes/Clothes/jkb1794_f.png);
+}
+
+.clothes__img--17{
+    background-image: url(./Imagenes/Clothes/n06159_f.png);
+}
+
+.clothes__img--17:hover{
+    background-image: url(./Imagenes/Clothes/n06159_d2.png);
+}
+
+.clothes__img--18{
+    background-image: url(./Imagenes/Clothes/k06726_f1.png);
+}
+
+.clothes__img--18:hover{
+    background-image: url(./Imagenes/Clothes/k06726_f4.png);
+}
+
+.clothes__img--19{
+    background-image: url(./Imagenes/Clothes/k06660_f.png);
+}
+
+.clothes__img--19:hover{
+    background-image: url(./Imagenes/Clothes/k06660_b.png);
+}
+
+.clothes__img--20{
+    background-image: url(./Imagenes/Clothes/k06659_f.png);
+}
+
+.clothes__img--20:hover{
+    background-image: url(./Imagenes/Clothes/k06659_d.png);
+}
+
+.clothes__img--21{
+    background-image: url(./Imagenes/Clothes/k06658_f.png);
+}
+
+.clothes__img--21:hover{
+    background-image: url(./Imagenes/Clothes/k06658_d.png);
+}
+
+.clothes__img--22{
+    background-image: url(./Imagenes/Clothes/k06656_f.png);
+}
+
+.clothes__img--22:hover{
+    background-image: url(./Imagenes/Clothes/k06656_d.png);
+}
+
+.clothes__img--23{
+    background-image: url(./Imagenes/Clothes/k06655_f.png);
+}
+
+.clothes__img--23:hover{
+    background-image: url(./Imagenes/Clothes/k06655_d.png);
+}
+
+
+
 /* #endregion */
 
 
@@ -695,6 +844,19 @@ body{
         margin-right: 0;
     }
 
+    .footer__info{
+        margin-left: 50px;
+    }
+
+    .footer__left{
+        margin-right: 15px;
+    }
+
+    .footer__input{
+        height: 1px;
+        width: 60%;
+    }
+
     /* #endregion */
 
     /* #region MEDIAQUERIES HOME */
@@ -705,6 +867,27 @@ body{
 
     .newsHome__boxs{
         gap: 15px;
+    }
+
+    /* #endregion */
+
+    /* #region MEDIAQUERIES CLOTHES */
+
+    .salesClothes__img{
+        height: 600px;
+        width: 700px;
+    }
+
+    .title--sales{
+        margin-left: 25px;
+    }
+
+    .clothes__div{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .clothes__img{
+        height: 300px;
     }
 
     /* #endregion */
@@ -757,7 +940,71 @@ body{
 
     /* #endregion */
 
+    /* #region MEDIAQUERIES CLOTHES */
+
+    .salesClothes__img{
+        height: 400px;
+        width: 500px;
+    }
+
+    .title--sales{
+        margin-left: 25px;
+    }
+
+    .clothes__div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* #endregion */
+
+    /* #region MEDIAQUERIES FOOTER */
+
+        .footer{
+            font-size: 10px;
+        }
+
+        .footer__img{
+            width: 90px;
+        }
+
+        .footer__icon{
+            width: 20px;
+        }
+
+        .footer__input{
+            height: 1px;
+            width: 50%;
+        }
+
+        .footer__left{
+            margin-right: 5px;
+        }
+
+        .footer__info{
+            margin-left: 25px;
+        }
+
+    /* #endregion */
+
+    /* #region MEDIAQUERIES CLOTHES */
+
+    .trophiesHome__box{
+        width: 600px;
+        border: 5px solid var(--color-quaternary);
+    }
+
+    .trophiesHome__img{
+        height: 400px;
+    }
+
+    .heroHome__title{
+        font-size: 40px;
+    }
+
+    /* #endregion */
+
 }
 
 /* #endregion */
+
 
