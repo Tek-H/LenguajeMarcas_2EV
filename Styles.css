@@ -491,7 +491,7 @@ body{
 
 /* #region CLOTHES */
 
-.clotherHero{
+.clothesHero{
     background-image: linear-gradient(var(--color-terciary)), url(./Imagenes/Home/On_The_Road_Desktop_2000x1150px.webp);
     width: 100%;
     background-size: cover;
@@ -499,10 +499,11 @@ body{
     background-position: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     height: 800px;
     gap: 25px;
+    padding-bottom: 50px;
 }
 
 .salesClothes{
@@ -567,7 +568,7 @@ body{
 
 .clothes__img{
     width: var(--width-total);
-    height: 300px;
+    height: 400px;
     background-image: url(./Imagenes/Clothes/m06975_f1.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -721,9 +722,6 @@ body{
     .nav__item{
         display: block;
     }
-
-    
-
 
     /* #endregion */
 
