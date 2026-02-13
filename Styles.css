@@ -698,7 +698,136 @@ body{
 }
 /* #endregion */
 
+/* #region -- Trophy */
+.trophyContainer {
+    width: 1000px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin: 0 auto;
+}
 
+.trophyContainer__trophy {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.trophyContainer__trophy__img {
+    object-fit: contain;
+    word-spacing: 15px;
+    letter-spacing: 5px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: var(--color-terciary) 1px 1px 20px;
+}
+
+@keyframes aparecerLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes aparecerRight {
+    from {
+        opacity: 0;
+        transform: translateX(1000px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.trophyContainer__trophy__imgPremier {
+    background-image: url(img/premier.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: aparecerLeft linear forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+}
+
+.trophyContainer__trophy__imgFacup {
+    background-image: url(img/facup.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: aparecerRight linear forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+}
+
+.trophyContainer__trophy__imgShield {
+    background-image: url(img/comunnityshield.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: aparecerLeft linear forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+}
+
+.trophyContainer__trophy__imgCarabao {
+    background-image: url(img/carabaocup.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: aparecerRight linear forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+}
+
+.trophyContainer__trophy__text {
+    opacity: 0;
+    color: var(--color-secundary);
+    border-radius: 10px;
+    box-shadow: var(--color-principal) 1px 1px 20px;
+}
+
+:hover.trophyContainer__trophy__text {
+    transition: 0.8s;
+    opacity: 1;
+    background: linear-gradient(var(--color-terciary), var(--color-terciary));
+    text-shadow: var(--color-principal) 1px 1px 10px;
+}
+
+.trophyContainer__trophy__text {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trophyContainer__text {
+    width: 400px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background-color: var(--color-principal);
+    color: var(--color-secundary);
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 0 auto;
+    box-shadow: var(--color-terciary) 1px 1px 20px;
+}
+/* #endregion */
 
 /* #endregion -- SALÓN DE TROFEOS -- */
 
