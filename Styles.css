@@ -688,7 +688,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient( var(--color-terciary), var(--color-terciary) ), url(img/trofeosBackGround.jpg);
+    background-image: linear-gradient( var(--color-terciary), var(--color-terciary) ), url(Imagenes/Trophies/trofeosBackGround.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -751,7 +751,7 @@ body{
 }
 
 .trophyContainer__trophy__imgPremier {
-    background-image: url(img/premier.png);
+    background-image: url(Imagenes/Trophies/premier.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -761,7 +761,7 @@ body{
 }
 
 .trophyContainer__trophy__imgFacup {
-    background-image: url(img/facup.png);
+    background-image: url(Imagenes/Trophies/facup.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -771,7 +771,7 @@ body{
 }
 
 .trophyContainer__trophy__imgShield {
-    background-image: url(img/comunnityshield.png);
+    background-image: url(Imagenes/Trophies/comunnityshield.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -781,7 +781,7 @@ body{
 }
 
 .trophyContainer__trophy__imgCarabao {
-    background-image: url(img/carabaocup.png);
+    background-image: url(Imagenes/Trophies/carabaocup.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
