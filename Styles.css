@@ -676,6 +676,35 @@ body{
 
 /* #endregion */
 
+
+
+
+/* #region -- SALÓN DE TROFEOS -- */
+
+/* #region -- Trophy Title */
+.trophyTitle {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( var(--color-terciary), var(--color-terciary) ), url(img/trofeosBackGround.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    color: var(--color-secundary);
+    font-size: var(--fontSize-principal);
+    letter-spacing: 20px;
+}
+/* #endregion */
+
+
+
+/* #endregion -- SALÓN DE TROFEOS -- */
+
+
+
+
 /* #region MEDIAQUERIES */
 
 @media (max-width: 1050px){
