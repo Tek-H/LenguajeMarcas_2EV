@@ -832,6 +832,95 @@ body{
 /* #endregion -- SALÓN DE TROFEOS -- */
 
 
+/* #region -- BUY TICKETS -- */
+
+/* #region -- Tickets Title */
+.ticketTitle {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( var(--color-terciary), var(--color-terciary) ), url(Imagenes/Home/image.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    color: var(--color-secundary);
+    font-size: var(--fontSize-principal);
+    letter-spacing: 20px;
+}
+    .match {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .match__title {
+        color: var(--color-quaternary);
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    .matchContainer {
+        width: 100%;
+        display: flex;
+        gap: 50px;
+    }
+
+    .matchContainer__cardImg {
+        width: 400px;
+        height: 220px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .matchContainer__cardImg--chelsea {
+        background-image: url(./Imagenes/Entradas/chelsea.png);
+    }
+
+    .matchContainer__cardImg--brighton {
+        background-image: url(Imagenes/Entradas/brighton.png);
+    }
+
+    .matchContainer__cardImg--liverpool {
+        background-image: url(Imagenes/Entradas/liverpool.png);
+    }
+
+    .matchContainer__cardImg--city {
+        background-image: url(Imagenes/Entradas/city.png);
+    }
+
+    .matchContainer__cardText {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    .matchContainer__btn {
+        text-decoration: none;
+        width: 100px;
+        height: 30px;
+        border-radius: 8px;
+        background-color: var(--color-quaternary);
+        color: var(--color-secundary);
+        border-style: none;
+    }
+
+    :hover.matchContainer__btn {
+        background-color: var(--color-principal);
+        box-shadow: var(--color-senary) 1px 1px 5px;
+    }
+/* #endregion */
+/* #endregion */
+
+
 
 
 /* #region MEDIAQUERIES */
