@@ -788,12 +788,13 @@ body{
 
 .offers__card{
     color: var(--color-terciary);
-    height: 200px;
+    height: 350px;
     width: 400px;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    box-shadow: 0px 0px 20px var(--color-terciary);
 }
 
 .offers__image{
@@ -824,12 +825,16 @@ body{
   gap: 20px;
   width: 300%;
   animation: scroll 20s linear infinite;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .products__slide {
+    border-radius: 5px;
     width: 100%;
     text-align: center;
     color: var(--color-terciary);
+    box-shadow: 0px 0px 15px var(--color-terciary);
 }
 
 .products__image {
