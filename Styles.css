@@ -873,6 +873,10 @@ body{
     align-items: center;
 }
 
+.players__row a{
+    text-decoration: none;
+}
+
 .player__title{
     color: var(--color-quaternary);
     font-size: 40px;
