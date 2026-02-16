@@ -5,6 +5,7 @@
     --color-secundary: rgb(247, 247, 247);
     --color-terciary: rgba(0, 0, 0, 0.5);
     --color-quaternary: #9B824A;
+    --color-quinary: rgb(0, 0, 0);
     --fontSize-principal: 56px;
     --fontSize-secundary: 16px;
     --width-total: 100%;
@@ -915,7 +916,7 @@ body{
 
     :hover.matchContainer__btn {
         background-color: var(--color-principal);
-        box-shadow: var(--color-senary) 1px 1px 5px;
+        box-shadow: var(--color-quinary) 1px 1px 5px;
     }
 /* #endregion */
 /* #endregion */
