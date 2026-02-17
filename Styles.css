@@ -832,9 +832,19 @@ body{
 .products__slide {
     border-radius: 5px;
     width: 100%;
+    height: 330px;
     text-align: center;
     color: var(--color-terciary);
     box-shadow: 0px 0px 15px var(--color-terciary);
+}
+
+.products__slide p{
+    min-height: 40px;
+    margin-top: 10px;
+}
+
+.products__price{
+    vertical-align:bottom;
 }
 
 .products__image {
@@ -991,7 +1001,13 @@ body{
         gap: 10px;
     }
     .products__slider-track{
-        width: 700%;
+        width: 400%;
+    }
+    .products__slide p{
+        margin-left: 10px;
+        margin-right: 10px;
+        min-height: 50px;
+        margin-top: 10px;
     }
     .buttons__box{
         width: 90%;
@@ -1004,6 +1020,23 @@ body{
         margin-top: 25px;
     }
 }
+
+
+@media (max-width:750px){
+    .products__slide p{
+        margin-left: 10px;
+        margin-right: 10px;
+        min-height: 50px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 700px){
+    .products__slider-track{
+        width: 600%;
+    }
+}
+
 
 @media (max-width: 1649px){
     .offers__cards{
