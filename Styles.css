@@ -878,7 +878,7 @@ body{
 
 /* #region MEDIAQUERIES */
 
-@media (max-width: 1050px){
+@media (max-width: 1024px){
 
     /* #region MEDIAQUERIES FOOTER */
 
@@ -944,7 +944,7 @@ body{
 
 }
 
-@media (max-width: 768px){
+@media (max-width: 600px){
 
     /* #region MEDIAQUERIES HEADER */
 
