@@ -701,6 +701,10 @@ body{
 /* #endregion */
 
 /* #region -- Trophy */
+.trophyBody {
+    overflow-x: hidden;
+}
+
 .trophyContainer {
     width: 1000px;
     height: 450px;
@@ -757,7 +761,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    animation: aparecerLeft linear forwards;
+    animation: aparecerLeft linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 40%;
 }
@@ -767,7 +771,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    animation: aparecerRight linear forwards;
+    animation: aparecerRight linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 40%;
 }
@@ -777,7 +781,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    animation: aparecerLeft linear forwards;
+    animation: aparecerLeft linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 40%;
 }
@@ -787,7 +791,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    animation: aparecerRight linear forwards;
+    animation: aparecerRight linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 40%;
 }
