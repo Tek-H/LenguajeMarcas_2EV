@@ -542,59 +542,59 @@ body{
 }
 
 @keyframes carousel1 {
-    0%{transform: scale(1) translateX(400px);}
-    10%{transform: scale(1) translateX(400px);}
-    20%{transform: scale(1) translateX(400px);}
-    30%{transform: scale(1.1) translateX(-50px);}
-    40%{transform: scale(1.1) translateX(-50px);}
-    50%{transform: scale(1) translateX(-600px);}
-    60%{transform: scale(1) translateX(-600px);}
-    70%{transform: scale(1) translateX(-900px);}
-    80%{transform: scale(1) translateX(-900px);}
-    90%{transform: scale(1) translateX(400px);}
-    100%{transform: scale(1) translateX(400px);}
+    0%{transform: scale(1) translateX(95%);}
+    10%{transform: scale(1) translateX(95%);}
+    20%{transform: scale(1) translateX(95%);}
+    30%{transform: scale(1.1) translateX(-15%);}
+    40%{transform: scale(1.1) translateX(-15%);}
+    50%{transform: scale(1) translateX(-5%);}
+    60%{transform: scale(1) translateX(-5%);}
+    70%{transform: scale(1) translateX(-35%);}
+    80%{transform: scale(1) translateX(-35%);}
+    90%{transform: scale(1) translateX(95%);}
+    100%{transform: scale(1) translateX(95%);}
 }
 
 @keyframes carousel2 {
-    0%{transform: scale(1) translateX(350px);}
-    10%{transform: scale(1) translateX(350px);}
-    20%{transform: scale(1) translateX(350px);}
-    30%{transform: scale(1) translateX(-50px);}
-    40%{transform: scale(1) translateX(-50px);}
-    50%{transform: scale(1.1) translateX(-450px);}
-    60%{transform: scale(1.1) translateX(-450px);}
-    70%{transform: scale(1) translateX(-1050px);}
-    80%{transform: scale(1) translateX(-1050px);}
-    90%{transform: translateX(350px);}
-    100%{transform: translateX(350px);}
+    0%{transform: scale(1) translateX(90%);}
+    10%{transform: scale(1) translateX(90%);}
+    20%{transform: scale(1) translateX(90%);}
+    30%{transform: scale(1) translateX(50%);}
+    40%{transform: scale(1) translateX(50%);}
+    50%{transform: scale(1.1) translateX(-120%);}
+    60%{transform: scale(1.1) translateX(-120%);}
+    70%{transform: scale(1) translateX(-50%);}
+    80%{transform: scale(1) translateX(-50%);}
+    90%{transform: translateX(90%);}
+    100%{transform: translateX(90%);}
 }
 
 @keyframes carousel3 {
-    0%{transform: scale(1) translateX(350px);}
-    10%{transform: scale(1) translateX(350px);}
-    20%{transform: scale(1) translateX(350px);}
-    30%{transform: scale(1) translateX(-50px);}
-    40%{transform: scale(1) translateX(-50px);}
-    50%{transform: scale(1) translateX(-450px);}
-    60%{transform: scale(1) translateX(-450px);}
-    70%{transform: scale(1.1) translateX(-850px);}
-    80%{transform: scale(1.1) translateX(-850px);}
-    90%{transform: translateX(350px);}
-    100%{transform: translateX(350px);}
+    0%{transform: scale(1) translateX(90%);}
+    10%{transform: scale(1) translateX(90%);}
+    20%{transform: scale(1) translateX(90%);}
+    30%{transform: scale(1) translateX(50%);}
+    40%{transform: scale(1) translateX(50%);}
+    50%{transform: scale(1) translateX(10%);}
+    60%{transform: scale(1) translateX(10%);}
+    70%{transform: scale(1.1) translateX(-220%);}
+    80%{transform: scale(1.1) translateX(-220%);}
+    90%{transform: translateX(90%);}
+    100%{transform: translateX(90%);}
 }
 
 @keyframes carousel4 {
-    0%{transform: scale(1.1) translateX(350px);}
-    10%{transform: scale(1.1) translateX(350px);}
-    20%{transform: scale(1.1) translateX(350px);}
-    30%{transform: scale(1) translateX(-150px);}
-    40%{transform: scale(1) translateX(-150px);}
-    50%{transform: scale(1) translateX(-500px);}
-    60%{transform: scale(1) translateX(-500px);}
-    70%{transform: scale(1) translateX(-900px);}
-    80%{transform: scale(1) translateX(-900px);}
-    90%{transform: scale(1.1) translateX(350px);}
-    100%{transform: scale(1.1) translateX(350px);}
+    0%{transform: scale(1.1) translateX(90%);}
+    10%{transform: scale(1.1) translateX(90%);}
+    20%{transform: scale(1.1) translateX(90%);}
+    30%{transform: scale(1) translateX(-35%);}
+    40%{transform: scale(1) translateX(-35%);}
+    50%{transform: scale(1) translateX(-35%);}
+    60%{transform: scale(1) translateX(-35%);}
+    70%{transform: scale(1) translateX(-35%);}
+    80%{transform: scale(1) translateX(-35%);}
+    90%{transform: scale(1.1) translateX(90%);}
+    100%{transform: scale(1.1) translateX(90%);}
 }
 
 /* #endregion */
