@@ -6,6 +6,8 @@
     --color-terciary: rgba(0, 0, 0, 0.5);
     --color-quaternary: #9B824A;
     --color-quinary: rgb(0, 0, 0);
+    --color-senary: #690102;
+    --color-septenary: #705f3a;
     --fontSize-principal: 56px;
     --fontSize-secundary: 16px;
     --width-total: 100%;
@@ -222,7 +224,7 @@ body{
 
 .button{
     background-color: var(--color-quaternary);
-    border: 4px solid #705f3a;
+    border: 4px solid var(--color-septenary);
     font-size: var(--fontSize-secundary);
     padding: 10px 25px;
     color: var(--color-secundary);
@@ -235,7 +237,7 @@ body{
 .button:hover{
     background-color: var(--color-principal);
     color: var(--color-secundary);
-    border: 4px solid #690102;
+    border: 4px solid var(--color-senary);
     scale: 1.1;
 }
 
@@ -536,8 +538,7 @@ body{
 @keyframes scroll {
     from {
         transform: translateX(0);
-    }
-    to {
+    } to {
         transform: translateX(-50%);
     }
 }
@@ -793,13 +794,13 @@ body{
 
 .trophyContainer__trophy__text {
     opacity: 0;
+    transition: 1.8s;
     color: var(--color-secundary);
     border-radius: 10px;
     box-shadow: var(--color-principal) 1px 1px 20px;
 }
 
 :hover.trophyContainer__trophy__text {
-    transition: 0.8s;
     opacity: 1;
     background: linear-gradient(var(--color-terciary), var(--color-terciary));
     text-shadow: var(--color-principal) 1px 1px 10px;
@@ -835,7 +836,7 @@ body{
 
 /* #region -- BUY TICKETS -- */
 
-/* #region -- Tickets Title */
+/* #region - Tickets Title */
 .ticketTitle {
     width: 100%;
     height: 300px;
@@ -850,75 +851,110 @@ body{
     font-size: var(--fontSize-principal);
     letter-spacing: 20px;
 }
-    .match {
-        width: 100%;
-        height: 600px;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        padding: 20px;
-    }
 
-    .match__title {
-        color: var(--color-quaternary);
-        display: flex;
-        justify-content: center;
-        padding: 40px;
-    }
-
-    .matchContainer {
-        width: 100%;
-        display: flex;
-        gap: 50px;
-    }
-
-    .matchContainer__cardImg {
-        width: 400px;
-        height: 220px;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        display: flex;
-        border-top-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-    }
-
-    .matchContainer__cardImg--chelsea {
-        background-image: url(./Imagenes/Entradas/chelsea.png);
-    }
-
-    .matchContainer__cardImg--brighton {
-        background-image: url(Imagenes/Entradas/brighton.png);
-    }
-
-    .matchContainer__cardImg--liverpool {
-        background-image: url(Imagenes/Entradas/liverpool.png);
-    }
-
-    .matchContainer__cardImg--city {
-        background-image: url(Imagenes/Entradas/city.png);
-    }
-
-    .matchContainer__cardText {
-        display: flex;
-        flex-direction: column;
-        padding: 10px 0px;
-    }
-
-    .matchContainer__btn {
-        text-decoration: none;
-        width: 100px;
-        height: 30px;
-        border-radius: 8px;
-        background-color: var(--color-quaternary);
-        color: var(--color-secundary);
-        border-style: none;
-    }
-
-    :hover.matchContainer__btn {
-        background-color: var(--color-principal);
-        box-shadow: var(--color-quinary) 1px 1px 5px;
-    }
 /* #endregion */
+
+/* #region - Matches */
+
+@keyframes zigzag {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-68%); }
+}
+
+.match {
+    width: 97%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0px 20px;
+    overflow: hidden;
+}
+
+.match__scrollContent {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    animation: zigzag 3s ease-in-out infinite alternate;
+}
+
+:hover.match__scrollContent {
+    animation-play-state: paused;
+}
+
+.match__title {
+    color: var(--color-quaternary);
+    display: flex;
+    justify-content: center;
+        padding: 40px;
+}
+
+.matchContainer {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+.matchContainer__cardImg {
+    width: 400px;
+    height: 220px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0% auto;
+}
+
+.matchContainer__cardImg--chelsea {
+    background-image: url(./Imagenes/Entradas/chelsea.png);
+}
+
+.matchContainer__cardImg--brighton {
+    background-image: url(Imagenes/Entradas/brighton.png);
+}
+
+.matchContainer__cardImg--liverpool {
+    background-image: url(Imagenes/Entradas/liverpool.png);
+}
+
+.matchContainer__cardImg--city {
+    background-image: url(Imagenes/Entradas/city.png);
+}
+
+.matchContainer__cardImg--madrid {
+    background-image: url(Imagenes/Entradas/madrid.png);
+}
+
+.matchContainer__cardText {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.button{
+    background-color: var(--color-quaternary);
+    border: 4px solid var(--color-septenary);
+    font-size: var(--fontSize-secundary);
+    padding: 10px 25px;
+    color: var(--color-secundary);
+    border-radius: var(--borderRadius-principal);
+    font-family: var(--fontFamily--principal);
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.button:hover{
+    background-color: var(--color-principal);
+    color: var(--color-secundary);
+    border: 4px solid var(--color-senary);
+    scale: 1.1;
+}
+/* #endregion */
+
+/* #region - Tour */
+/* #endregion */
+
 /* #endregion */
 
 
