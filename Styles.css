@@ -1461,7 +1461,7 @@ body{
 }
 
 .buttons__box a:hover{
-    color: var();
+    color: var(--color-principal);
 }
 
 @media (max-width: 900px){
