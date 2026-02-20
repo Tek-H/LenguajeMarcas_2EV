@@ -562,12 +562,13 @@ body.dark-mode {
 }
 
 .trophiesHome__div{
-    width: var(--width-principal);
+    width: var(--width-total);
     height: var(--width-total);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .trophiesHome__title{
@@ -577,13 +578,13 @@ body.dark-mode {
 
 .trophiesHome__carousel{
     display: flex;
-    width: var(--width-total);
+    width: var(--width-principal);
     align-items: center;
-    justify-content: center;
     height: 800px;
     margin: 150px 0;
-    gap: 55px;
+    gap: 45px;
     overflow: hidden;
+    padding-left: 110px;
 }
 
 .trophiesHome__slide{
@@ -606,7 +607,7 @@ body.dark-mode {
 }
 
 .trophiesHome__box--1{
-    animation: carousel3 20s infinite;
+    animation: carousel1 20s infinite;
 }
 
 .trophiesHome__box--2{
@@ -614,12 +615,17 @@ body.dark-mode {
 }
 
 .trophiesHome__box--3{
-    animation: carousel1 20s infinite;
+    animation: carousel3 20s infinite;
 }
 
 .trophiesHome__box--4{
     animation: carousel4 20s infinite;
 }
+
+.trophiesHome__box--5{
+    animation: carousel5 20s infinite;
+}
+
 
 .trophiesHome__img{
     height: 300px;
@@ -633,56 +639,74 @@ body.dark-mode {
 }
 
 @keyframes carousel1 { 
-    0%{transform: scale(1) translateX(650px);} 
-    10%{transform: scale(1) translateX(650px);} 
-    20%{transform: scale(1) translateX(650px);} 
-    30%{transform: scale(1.1) translateX(200px);} 
-    40%{transform: scale(1.1) translateX(200px);} 
-    50%{transform: scale(1) translateX(-200px);} 
-    60%{transform: scale(1) translateX(-200px);} 
-    70%{transform: scale(1) translateX(-650px);} 
-    80%{transform: scale(1) translateX(-650px);} 
-    90%{transform: scale(1) translateX(650px);} 
-    100%{transform: scale(1) translateX(650px);} 
+    0%{transform: scale(1.1);} 
+    10%{transform: scale(1.1);} 
+    20%{transform: scale(1.1);} 
+    30%{transform: scale(1) translateX(-150%);} 
+    40%{transform: scale(1) translateX(-150%);} 
+    50%{transform: scale(1) translateX(-240%);} 
+    60%{transform: scale(1) translateX(-240%);} 
+    70%{transform: scale(1) translateX(-360%);} 
+    80%{transform: scale(1) translateX(-360%);} 
+    90%{transform: scale(1.1) translateX(0);} 
+    100%{transform: scale(1.1) translateX(-0);} 
 } 
+
 @keyframes carousel2 { 
-    0%{transform: scale(1) translateX(600px);} 
-    10%{transform: scale(1) translateX(600px);} 
-    20%{transform: scale(1) translateX(600px);} 
-    30%{transform: scale(1) translateX(200px);} 
-    40%{transform: scale(1) translateX(200px);} 
-    50%{transform: scale(1.1) translateX(-200px);} 
-    60%{transform: scale(1.1) translateX(-200px);} 
-    70%{transform: scale(1) translateX(-650px);} 
-    80%{transform: scale(1) translateX(-650px);} 
-    90%{transform: translateX(600px);} 
-    100%{transform: translateX(600px);} 
+    0%{transform: scale(1);} 
+    10%{transform: scale(1);} 
+    20%{transform: scale(1);} 
+    30%{transform: scale(1.1) translateX(-100%);} 
+    40%{transform: scale(1.1) translateX(-100%);} 
+    50%{transform: scale(1) translateX(-250%);} 
+    60%{transform: scale(1) translateX(-250%);} 
+    70%{transform: scale(1) translateX(-360%);} 
+    80%{transform: scale(1) translateX(-360%);} 
+    90%{transform: scale(1) translateX(0);} 
+    100%{transform: scale(1) translateX(0);} 
 } 
+
 @keyframes carousel3 { 
-    0%{transform: scale(1) translateX(600px);} 
-    10%{transform: scale(1) translateX(600px);} 
-    20%{transform: scale(1) translateX(600px);} 
-    30%{transform: scale(1) translateX(200px);} 
-    40%{transform: scale(1) translateX(200px);} 
-    50%{transform: scale(1) translateX(-200px);} 
-    60%{transform: scale(1) translateX(-200px);} 
-    70%{transform: scale(1.1) translateX(-600px);} 
-    80%{transform: scale(1.1) translateX(-600px);} 
-    90%{transform: translateX(600px);} 
-    100%{transform: translateX(600px);} 
+    0%{transform: scale(1);} 
+    10%{transform: scale(1);} 
+    20%{transform: scale(1);} 
+    30%{transform: scale(1) translateX(-110%);} 
+    40%{transform: scale(1) translateX(-110%);} 
+    50%{transform: scale(1.1) translateX(-200%);} 
+    60%{transform: scale(1.1) translateX(-200%);} 
+    70%{transform: scale(1) translateX(-360%);} 
+    80%{transform: scale(1) translateX(-360%);} 
+    90%{transform: scale(1) translateX(0);} 
+    100%{transform: scale(1) translateX(0);} 
 } 
-    @keyframes carousel4 { 0%{transform: scale(1.1) translateX(600px);} 
-    10%{transform: scale(1.1) translateX(600px);} 
-    20%{transform: scale(1.1) translateX(600px);} 
-    30%{transform: scale(1) translateX(200px);} 
-    40%{transform: scale(1) translateX(200px);} 
-    50%{transform: scale(1) translateX(-200px);} 
-    60%{transform: scale(1) translateX(-200px);} 
-    70%{transform: scale(1) translateX(-650px);} 
-    80%{transform: scale(1) translateX(-650px);} 
-    90%{transform: scale(1.1) translateX(600px);} 
-    100%{transform: scale(1.1) translateX(600px);} 
-}
+
+@keyframes carousel4 { 
+    0%{transform: scale(1);} 
+    10%{transform: scale(1);} 
+    20%{transform: scale(1);} 
+    30%{transform: scale(1) translateX(-110%);} 
+    40%{transform: scale(1) translateX(-110%);} 
+    50%{transform: scale(1) translateX(-220%);} 
+    60%{transform: scale(1) translateX(-220%);} 
+    70%{transform: scale(1.1) translateX(-300%);} 
+    80%{transform: scale(1.1) translateX(-300%);} 
+    90%{transform: scale(1) translateX(0);} 
+    100%{transform: scale(1) translateX(0);} 
+} 
+
+@keyframes carousel5 { 
+    0%{transform: scale(1);} 
+    10%{transform: scale(1);} 
+    20%{transform: scale(1);} 
+    30%{transform: scale(1) translateX(-110%);} 
+    40%{transform: scale(1) translateX(-110%);} 
+    50%{transform: scale(1) translateX(-220%);} 
+    60%{transform: scale(1) translateX(-220%);} 
+    70%{transform: scale(1) translateX(-320%);} 
+    80%{transform: scale(1) translateX(-320%);} 
+    90%{transform: scale(1) translateX(0);} 
+    100%{transform: scale(1) translateX(0);} 
+} 
 
 .members{
     margin-top: 50px;
