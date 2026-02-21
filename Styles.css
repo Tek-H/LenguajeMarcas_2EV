@@ -232,9 +232,13 @@ body.dark-mode {
     height: 25px;
     padding: 15px;
     border-radius: 10px;
-    border: 1px solid var(--color-terciary);
     font-family: var(--fontFamily--principal);
     font-size: 15px;
+    background: rgba(255, 255, 255, 0.39);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .footer__input::placeholder{
@@ -1563,4 +1567,53 @@ body.dark-mode {
     .offers__cards{
         gap: 10px;
     }
+}
+
+/* CONTACT US */
+
+.contact{
+    display: flex;
+    align-items: center;
+    width: var(--width-total);
+    justify-content: center;
+}
+
+.contact__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: var(--width-principal);
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact__name{
+    display: flex;
+    gap: 10px;
+    width: 107%;
+}
+
+.contact__input{
+    width: var(--width-total);
+    height: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: var(--fontFamily--principal);
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.39);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact__input--message{
+    height: 200px;
 }
