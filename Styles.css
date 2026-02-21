@@ -35,7 +35,7 @@ body.dark-mode {
     --color-text: rgba(255, 255, 255, 0.5);
     --color-box: #000911;
     --invert: 0.8;
-    --color-buttonText: rgba(0, 0, 0, 0.719);
+    --color-buttonText: rgb(0, 0, 0);
 }
 
 /* #region HEADER */
@@ -247,11 +247,11 @@ body.dark-mode {
 /* #region ELEMENTOS COMUNES */
 
 .button{
-    background-color: var(--color-quaternary);
-    border: 4px solid var(--color-quaternary);
+    background-color: var(--color-button);
+    border: 4px solid var(--color-button);
     font-size: var(--fontSize-secundary);
     padding: 10px 25px;
-    color: var(--color-buttonText);
+    color: var(--color-secundary);
     border-radius: var(--borderRadius-principal);
     font-family: var(--fontFamily--principal);
     transition: 0.5s;
@@ -259,9 +259,9 @@ body.dark-mode {
 }
 
 .button:hover{
-    background-color: var(--color-button);
-    color: var(--color-secundary);
-    border: 4px solid var(--color-button);
+    background-color: var(--color-quaternary);
+    border: 4px solid var(--color-quaternary);
+    color: var(--color-buttonText);
     scale: 1.1;
 }
 
@@ -276,6 +276,7 @@ body.dark-mode {
     background-color: transparent;
     border: none;
     scale: 1.1;
+    color: var(--color-terciary);
 }
 
 .title{
@@ -359,6 +360,10 @@ body.dark-mode {
     font-weight: 600;
     font-family: var(--fontFamily--principal);
     margin-top: -300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .heroHome__match{
@@ -430,9 +435,7 @@ body.dark-mode {
 
 
 .newsHome__img{
-    display: block ;
     width: 100%;
-    height: 400px !important;
     object-fit: cover;
 }
 
@@ -488,53 +491,41 @@ body.dark-mode {
 .tickets{
     width: var(--width-total);
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px 0;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .tickets__box{
     width: var(--width-principal);
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .tickets__match{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    width: var(20%);
     align-items: center;
-    justify-content: center;
 }
 
 .tickets__teams{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     word-spacing: 5px;
-    padding: 50px;
     border: 5px solid var(--color-quaternary);
     border-radius: var(--borderRadius-principal);
-    text-align: center;
-    width: var(--width-total);
     background-color: var(--color-box);
+    padding: 50px 0;
+    width: var(--width-principal);
 }
 
 .tickets__results{
+    word-spacing: 5px;
     display: flex;
     flex-direction: column;
+    gap: 25px;
     align-items: center;
-    justify-content: center;
-    word-spacing: 5px;
-    gap: 30px;
-    text-align: center;
-    width: 68%;
-    height: var(--width-total);
 }
 
 .tickets__goals{
@@ -753,7 +744,7 @@ body.dark-mode {
     flex-direction: row;
     align-items: end;
     justify-content: center;
-    height: 800px;
+    height: 750px;
     gap: 25px;
     padding-bottom: 50px;
 }
@@ -798,6 +789,7 @@ body.dark-mode {
 .title--sales{
     position: absolute;
     margin-left: 50px;
+    color: #043472 !important;
 }
 
 .title--cross{
@@ -1112,16 +1104,16 @@ body.dark-mode {
 
     /* #region MEDIAQUERIES HOME */
 
-    .newsHome__img{
-        height: 200px !important;
-    }
-
     .newsHome__boxs{
         gap: 15px;
     }
 
     .newsHome__text{
         margin-left: 15px;
+    }
+
+    .heroHome__title{
+        font-size: 60px;
     }
 
     /* #endregion */
@@ -1147,9 +1139,24 @@ body.dark-mode {
 
     /* #endregion */
 
+    .button{
+        font-size: 12px;
+    }
 
+    .button--clear{
+    font-size: 40px;
+    }
 
+    .header__title{
+        font-size: 35px ;
+    }
+
+    .header__box{
+        padding: 15px 0;
+    }
 }
+
+
 
 @media (max-width: 600px){
 
@@ -1168,8 +1175,7 @@ body.dark-mode {
         padding: 0;
     }
 
-    .button--clear:hover{
-        color: #ef0307;
+    .button:hover{
         scale: 1;
     }
 
@@ -1177,8 +1183,12 @@ body.dark-mode {
 
     /* #region MEDIAQUERIES HOME */
 
+    .heroHome__img{
+       height: 150px;
+    }
+
     .heroHome__title{
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .newsHome__boxs{

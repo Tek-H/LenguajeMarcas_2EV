@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.toggle("dark-mode");
 
     if (document.body.classList.contains("dark-mode")) {
-      button.textContent = "☀︎︎";
+      button2.textContent = "☀︎︎";
     } else {
-      button.textContent = "☾";
+      button2.textContent = "☾";
     }
   });
 });
