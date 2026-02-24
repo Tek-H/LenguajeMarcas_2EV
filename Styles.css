@@ -269,6 +269,13 @@ body.dark-mode {
     scale: 1.1;
 }
 
+.button__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
 .button--clear{
     background-color: transparent;
     color: white;
@@ -449,12 +456,19 @@ body.dark-mode {
 
 
 .newsHome__img{
-    width: 100%;
-    object-fit: cover;
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .newsHome__text{
     margin: 0 0 25px 25px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
 }
 
 .playersHome{
@@ -609,6 +623,7 @@ body.dark-mode {
     transition: 0.5s;
     width: 370px;
     background-color: var(--color-box);
+    min-height: 615px;
 }
 
 .trophiesHome__box--1{
@@ -641,6 +656,10 @@ body.dark-mode {
 
 .trophiesHome__text{
     margin: 0 25px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
 }
 
 @keyframes carousel1 { 
@@ -1130,6 +1149,15 @@ body.dark-mode {
         font-size: 60px;
     }
 
+    .text--hidden{
+        display: none;
+    }
+
+    .subtitle--news{
+        font-size: 18px;
+    }
+
+
     /* #endregion */
 
     /* #region MEDIAQUERIES CLOTHES */
@@ -1203,7 +1231,7 @@ body.dark-mode {
     /* #region MEDIAQUERIES HOME */
 
     .heroHome__img{
-       height: 150px;
+        height: 150px;
     }
 
     .heroHome__title{
@@ -1216,7 +1244,7 @@ body.dark-mode {
     }
 
     .newsHome__img{
-        height: 200px !important;
+        width: var(--width-total);
     }
 
     .text--hidden{
