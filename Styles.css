@@ -73,7 +73,7 @@ body.dark-mode {
 
 .header__title{
     
-    font-size: var(--color-secundary);
+    font-size: var(--fontSize-principal);
     background-size: 300px;
     
 }
@@ -1393,8 +1393,6 @@ opacity: 0.8;
     }
 }
 
-
-
 @media (max-width: 600px){
 
     /* #region MEDIAQUERIES HEADER */
@@ -1508,16 +1506,14 @@ opacity: 0.8;
             margin-left: 25px;
         }
 
-        
+    }
 
         
     /* #endregion */
 
-    
-=======
+
 #menu-toggle {
   display: none;
->>>>>>> 06be9aa5be31e4f4d1ac65ea0eec0581b7321508
 }
 
 
