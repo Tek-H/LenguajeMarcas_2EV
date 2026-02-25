@@ -17,7 +17,6 @@
     --fontFamily--principal: "Inter Tight", sans-serif;
     --background: white;
     --color-box: rgb(255, 255, 255);
-    --invert: 0;
     --color-button:#ef0307;
     --color-buttonText: rgb(255, 255, 255);
 }
@@ -211,7 +210,7 @@ body.dark-mode {
     width: 40px;
     opacity: 0.5;
     transition: 0.5s;
-    filter: invert(1);
+    filter: saturate(100%) invert(12%) sepia(96%) saturate(7467%) brightness(95%);
 }
 
 .footer__icon:hover{
