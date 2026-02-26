@@ -809,20 +809,21 @@ body.dark-mode {
     object-fit: cover;
 }
 
+.salesClothes__wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
 .salesClothes__box {
     display: flex;
-    width: max-content;
-    animation: scroll 15s linear infinite;
+    width: max-content; /* ajusta al total de slides + duplicados */
     gap: 25px;
-
+    animation: scroll 15s linear infinite;
 }
 
 @keyframes scroll {
-    from {
-        transform: translateX(0);
-    } to {
-        transform: translateX(calc(-50% - 12.5px));
-    }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* mueve exactamente la mitad del contenido */
 }
 
 .title--sales{
@@ -1088,244 +1089,6 @@ body.dark-mode {
 
 /* #endregion */
 
-/* #region MEDIAQUERIES */
-
-@media (max-width: 1024px){
-
-    /* #region MEDIAQUERIES FOOTER */
-
-    .footer{
-        margin-top: 150px;
-    }
-
-    .footer__img{
-        width: 100px;
-        margin-right: 0;
-        margin-left: -10px;
-    }
-
-    .footer__info{
-        margin-left: 0;
-    }
-
-    .footer__form{
-        margin-right: 0;
-    }
-
-    .footer__info{
-        gap: 50px;
-    }
-
-    .footer__left{
-        margin-right: 15px;
-    }
-
-    .footer__input{
-        height: 1px;
-        width: 60%;
-    }
-
-    .footer__box{
-        gap: 15px;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .footer__form{
-        width: var(--width-total);
-    }
-
-    /* #endregion */
-
-    /* #region MEDIAQUERIES HOME */
-
-    .newsHome__boxs{
-        gap: 15px;
-    }
-
-    .newsHome__text{
-        margin-left: 15px;
-    }
-
-    .heroHome__title{
-        font-size: 60px;
-    }
-
-    .text--hidden{
-        display: none;
-    }
-
-    .subtitle--news{
-        font-size: 18px;
-    }
-
-
-    /* #endregion */
-
-    /* #region MEDIAQUERIES CLOTHES */
-
-    .salesClothes__img{
-        height: 600px;
-        width: 700px;
-    }
-
-    .title--sales{
-        margin-left: 25px;
-    }
-
-    .clothes__div{
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .clothes__img{
-        height: 300px;
-    }
-
-    /* #endregion */
-
-    .button{
-        font-size: 12px;
-    }
-
-    .button--clear{
-    font-size: 40px;
-    }
-
-    .header__title{
-        font-size: 35px ;
-    }
-
-    .header__box{
-        padding: 15px 0;
-    }
-
-    .memberships__div{
-        display: flex;
-        flex-direction: column !important;
-    }
-}
-
-@media (max-width: 600px){
-
-    /* #region MEDIAQUERIES HEADER */
-
-    .nav{
-        display: none;
-    }
-
-    .nav__item{
-        display: block;
-    }
-
-    .button--clear{
-        text-align: start;
-        padding: 0;
-    }
-
-    .button:hover{
-        scale: 1;
-    }
-
-    /* #endregion */
-
-    /* #region MEDIAQUERIES HOME */
-
-    .heroHome__img{
-        height: 150px;
-    }
-
-    .heroHome__title{
-        font-size: 50px;
-    }
-
-    .newsHome__boxs{
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .newsHome__img{
-        width: var(--width-total);
-    }
-
-    .text--hidden{
-        display: none;
-    }
-
-    .button{
-        font-size: 10px;
-    }
-
-    .header__title{
-        font-size: 30px;
-    }
-
-    .header__img{
-        width: 40px;
-    }
-
-    /* #endregion */
-
-    /* #region MEDIAQUERIES CLOTHES */
-
-    .salesClothes__img{
-        height: 400px;
-        width: 500px;
-    }
-
-    .title--sales{
-        margin-left: 25px;
-    }
-
-    .clothes__div{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* #endregion */
-
-    /* #region MEDIAQUERIES FOOTER */
-
-        .footer{
-            font-size: 10px;
-        }
-
-        .footer__info{
-            gap: 10px;
-        }
-
-        .footer__box{
-            gap: 0;
-        }
-
-        .footer__img{
-            width: 90px;
-            margin-right: 15px;
-        }
-
-        .footer__icon{
-            width: 20px;
-        }
-
-        .footer__input{
-            height: 1px;
-            width: 50%;
-        }
-
-        .footer__left{
-            margin-right: 15px;
-        }
-
-        .footer__info{
-            margin-left: 25px;
-        }
-
-    }
-
-        
-    /* #endregion */
-
-/* #endregion */
-
 /* #region Carlos */
 
 .offers{
@@ -1552,7 +1315,7 @@ body.dark-mode {
 }
 
 .buttons__box a {
-    color: var(--color-secundary);
+    color: var(--color-buttonText);
     text-decoration: none;
 }
 
@@ -2021,6 +1784,14 @@ body.dark-mode {
         font-size: 60px;
     }
 
+    .text--hidden{
+        display: none;
+    }
+
+    .subtitle--news{
+        font-size: 18px;
+    }
+
     /* #endregion */
 
     /* #region MEDIAQUERIES CLOTHES */
@@ -2149,7 +1920,7 @@ body.dark-mode {
     /* #region MEDIAQUERIES HOME */
 
     .heroHome__img{
-       height: 150px;
+        height: 150px;
     }
 
     .heroHome__title{
@@ -2162,7 +1933,7 @@ body.dark-mode {
     }
 
     .newsHome__img{
-        height: 200px !important;
+        width: var(--width-total);
     }
 
     .text--hidden{
@@ -2545,63 +2316,64 @@ body.dark-mode {
 .menu-buttons {
   text-align: center;
   padding: 60px 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
-
+.div-menu-buttons{
+    display: flex;
+    flex-direction: row;
 }
    
 @keyframes  carrusel-fondo  {
   0% {
-    background-image: url("./Imagenes/fotos/carrusel.jpg");
+    background-image: url("../Imagenes/fotos/carrusel.jpg");
     opacity: 0.8;  
 }
   25% {
-    background-image: url("./Imagenes/fotos/carrusel2.jpg");
+    background-image: url("../Imagenes/fotos/carrusel2.jpg");
 opacity: 0.8;  
 }
   50% {
-    background-image: url("./Imagenes/fotos/carrusel3.jpg");
+    background-image: url("../Imagenes/fotos/carrusel3.jpg");
 opacity: 0.8;  
 }
   75% {
-    background-image: url("./Imagenes/fotos/carrusel4.jpg");
+    background-image: url("../Imagenes/fotos/carrusel4.jpg");
 opacity: 0.8;  
 }
   100% {
-    background-image: url("./Imagenes/fotos/carrusel.jpg");
+    background-image: url("../Imagenes/fotos/carrusel.jpg");
 opacity: 0.8;  
 }
 }
 
 @keyframes carrusel-fondo2 {
   0% {
-    background-image: url("./Imagenes/fotos/carrusel.jpg");
+    background-image: url("../Imagenes/fotos/carrusel.jpg");
 opacity: 0.8;  
 }
   25% {
-    background-image: url("./Imagenes/fotos/carrusel2.jpg");
+    background-image: url("../Imagenes/fotos/carrusel2.jpg");
 opacity: 0.8;  
 }
   50% {
-    background-image: url("./Imagenes/fotos/carrusel3.jpg");
+    background-image: url("../Imagenes/fotos/carrusel3.jpg");
 opacity: 0.8;  
 }
   75% {
-    background-image: url("./Imagenes/fotos/carrusel4.avif");
+    background-image: url("../Imagenes/fotos/carrusel4.avif");
 opacity: 0.8;  
 }
   100% {
-    background-image: url("./Imagenes/fotos/carrusel.jpg");
+    background-image: url("../Imagenes/fotos/carrusel.jpg");
 opacity: 0.8;
 }
 }
 .menu-buttons button {
-  background: var(--gold);
-  color: var(--white);
-  border: none;
   padding: 10px 20px;
   margin: 5px;
-  border-radius: 20px;
-  cursor: pointer;
 }
 
 .menu-buttons button:hover {
@@ -2609,7 +2381,7 @@ opacity: 0.8;
 }
 
 
-.products {
+.productos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
