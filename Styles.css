@@ -2416,19 +2416,4 @@ opacity: 0.8;
     height: auto;
 }
 
-@media (max-width: 600px) {
-  .header {
-    padding: 16px 24px;
-    
-  }
-
-  h1 {
-    font-size: 22px;
-  }
-
-  .hero h1 {
-    font-size: 1.5rem;
-  }
-}
-
 /* #endregion */
