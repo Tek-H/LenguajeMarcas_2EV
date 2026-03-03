@@ -2,7 +2,7 @@
 
 :root{
     --color-principal: #ef0307;
-    --color-secundary: rgb(247, 247, 247);
+    --color-secundary: #f2f0eb;
     --color-terciary: rgba(0, 0, 0, 0.5);
     --color-text: rgba(0, 0, 0, 0.5);
     --color-quaternary: #043472;
@@ -15,10 +15,10 @@
     --width-principal: 90%;
     --borderRadius-principal: 40px;
     --fontFamily--principal: "Inter Tight", sans-serif;
-    --background: white;
+    --background: #f2f0eb;
     --color-box: rgb(255, 255, 255);
     --color-button:#ef0307;
-    --color-buttonText: rgb(255, 255, 255);
+    --color-buttonText: #f2f0eb;
 }
 
 body{
